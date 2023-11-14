@@ -11,54 +11,74 @@
 <header>
   <nav>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#play">Play</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#home">Home</a></li>
+      <li><a class="nav-link" href="play.html">Play</a></li>
+      <li><a class="nav-link" href="work.html">Work</a></li>
+      <li><a class="nav-link" href="index.html">Home</a></li>
     </ul>
   </nav>
 </header>
 
-<main>
+<main id="main">
   <section id="about">
-    <img src="profile-pic.jpg" alt="Marley's Photo">
-    <h1>Hi, I'm Marley.</h1>
-    <p>I enjoy creating designs that provoke emotion and solve user problems through empathy and attention to detail. My skills include creating fun & intuitive design, planning and managing projects efficiently, and familiarity with a wide variety of tools!</p>
+    <img id="profile" src="./assets/profile.png" alt="Marley's Photo">
+    <div id="summary-box">
+      <h1 id="summary-title">Hi, I'm Marley.</h1>
+      <h3 id="summary-sub-title">UX/UI Designer</h3>
+      <p id="summary">I enjoy creating designs that provoke emotion and solve user problems through empathy and attention to detail. 
+        My skills include creating fun & intuitive design, planning and managing projects efficiently, and familiarity with a wide variety of tools!</p>
+    </div>
   </section>
 
-  <section id="research">
-    <h2>My user research process involves...</h2>
-    <p>conducting in-depth interviews and comprehensive analysis to unearth valuable insights into users' emotional responses and unmet needs.</p>
+  <section id="about-mobile">
+    <div id="summary-box">
+      <img id="profile" src="./assets/profile.png" alt="Marley's Photo">
+      <div class="summary-title-box">
+        <h1 id="summary-title">Hi, I'm Marley.</h1>
+        <h3 id="summary-sub-title">UX/UI Designer</h3>
+      </div>
+    </div>
+    <p id="summary">I enjoy creating designs that provoke emotion and solve user problems through empathy and attention to detail. 
+      My skills include creating fun & intuitive design, planning and managing projects efficiently, and familiarity with a wide variety of tools!</p>
   </section>
 
-  <section id="empathy">
-    <h2>My approach to user empathy involves...</h2>
-    <p>active listening, empathy mapping, and tools like user personas, ensuring that I create designs that genuinely cater to users' emotional needs and preferences.</p>
-  </section>
-
-  <section id="interviews">
-    <h2>My approach to qualitative interviews centers on...</h2>
-    <p>building trust, using open-ended questions, and active listening to elicit valuable insights.</p>
-  </section>
-
-  <aside>
-    <h2>My Tool Kit</h2>
-    <ul>
-      <li><img src="icon-figma.png" alt="Figma Icon"></li>
-      <li><img src="icon-google.png" alt="Google Workspace Icon"></li>
-      <li><img src="icon-canva.png" alt="Canva Icon"></li>
-      <li><img src="icon-linkedin.png" alt="LinkedIn Icon"></li>
-      <li><img src="icon-photoshop.png" alt="Photoshop Icon"></li>
-    </ul>
-  </aside>
+  <div id="content">
+    <div id="info">
+      <section class="info-box" id="research">
+        <p class="info-box-text">My <strong class="info-box-text">user research process</strong> involves conducting in-depth interviews and comprehensive analysis to unearth valuable insights into users' emotional responses and unmet needs.</p>
+      </section>
+    
+      <section class="info-box" id="empathy">
+        <p class="info-box-text">My approach to <strong class="info-box-text">user empathy</strong> involves active listening, empathy mapping, and tools like user personas, ensuring that I create designs that genuinely cater to users' emotional needs and preferences.</p>
+      </section>
+    
+      <section class="info-box" id="interviews">
+        <p class="info-box-text">My approach to <strong class="info-box-text">qualitative interviews</strong> centers on building trust, using open-ended questions, and active listening to elicit valuable insights.</p>
+      </section>
+    </div>
+  
+    <aside id="tool-kit">
+      <h2 id="tool-kit-title">My Tool Kit</h2>
+      <ul id="tool-kit-list">
+        <li><img class="icon" src="./assets/icons/figma.svg" alt="Figma Icon"></li>
+        <li><img class="icon" src="./assets/icons/google.svg" alt="Google Workspace Icon"></li>
+        <li><img class="icon" src="./assets/icons/canva.svg" alt="Canva Icon"></li>
+        <li><img class="icon" src="./assets/icons/invision.svg" alt="InVision Icon"></li>
+        <li><img class="icon" src="./assets/icons/photoshop.png" alt="Photoshop Icon"></li>
+      </ul>
+    </aside>
+  </div>
 </main>
 
 <footer>
-  <p>Let's Connect</p>
-  <a href="mailto:marleytk02@gmail.com">marleytk02@gmail.com</a>
-  <a href="tel:+16159275083">(615) 927-5083</a>
-  <a href="https://www.linkedin.com/in/marley"><img src="icon-linkedin.png" alt="LinkedIn Icon"></a>
+  <a class="footer-info" href="mailto:marleytk02@gmail.com">marleytk02@gmail.com</a>
+  <a class="footer-info" href="tel:+16159275083">(615) 927-5083</a>
+  <a class="footer-info" href="https://www.linkedin.com/in/marley"><img class="footer-icon" src="./assets/icons/linkedin.svg" alt="LinkedIn Icon"></a>
 </footer>
+
+<!-- <img class="line" id="line1" src="assets/lines/line1.svg">
+<img class="line" id="line2" src="assets/lines/line2.svg">
+<img class="line" id="line3" src="assets/lines/line3.svg">
+<img class="line" id="line4" src="assets/lines/line4.svg"> -->
 
 <script src="script.js"></script>
 </body>
